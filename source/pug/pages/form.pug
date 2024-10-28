@@ -1,0 +1,17 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Новичок" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = "wrapper--novice"
+  - const hasHeader = true
+  - const headerMods = "header--novice"
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "form.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    //- на странице запрещен "голый" код
+    //- все блоки вставляются из папки pug/components/blocks
+
+block modals

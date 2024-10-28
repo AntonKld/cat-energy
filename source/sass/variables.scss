@@ -1,0 +1,126 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+$color-accent-main: #2c39f2;
+$color-accent-second: #212121;
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-neon-blue:                   #2c39f2;
+$color-torch-red:                   #ff1553;
+$color-nero:                        #252525;
+$color-viking:                      #48abd3;
+$color-conifer:                     #a6f763;
+$color-picton-blue:                 #4891d3;
+$color-mint-tulip:                  #c6ebdd;
+$color-pale-turquoise:              #a6f4ff;
+$color-cornflower-blue:             #498ae9;
+$color-fog:                         #dfd2f0;
+$color-columbia-blue:               #b6e3fd;
+$color-alice-blue: #ecf6ff;
+$color-dodger-blue: #0088fe;
+$color-safety-orange: #ff5c00;
+$color-fiord: #535b62;
+$color-solitude: #f0f3f7;
+$color-solitude-2: #e4eeff;
+$color-nobel: #989898;
+$color-limeade: #5faf2c;
+$color-pelorous: #2ca7af;
+$color-alice-blue-2: #e7f6ff;
+$color-alice-blue-3: #ebf5ff;
+$color-alice-blue-4: #e5f8ff;
+$color-solitude: #e1edff;
+$color-hawkes-blue: #d7e5fc;
+$color-snow: #fcfcfc;
+$color-heather: #bac1c7;
+$color-azure: #eff0f0;
+$color-viking: #48abd3;
+$color-pattens-blue: #d3e9ff;
+$color-pattens-blue-1: #d7f0ff;
+$color-hint-of-green: #e4fed0;
+$color-rose-white: #ffefe6;
+$color-deep-sky-blue: #00d1ff;
+$color-turquoise-blue: #4fdfff;
+$color-light-cyan: #e6f8fc;
+$color-light-yellow: #fffde7;
+$color-snow-flurry: #eafbd0;
+$color-seashell: #fff2eb;
+$color-navy-blue: #0077de;
+$color-summer-sky :#3fa6ff;
+$color-alice-blue-5: #e3f2ff;
+$color-international-orange: #ff5200;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$conifer-to-bottom:                 linear-gradient(169.67deg, rgba(166, 246, 99, 1) -12.98%, rgba(255, 255, 255, 1) 99.2%);
+$mint-tulip-to-bottom:              linear-gradient(180deg, rgba(198, 235, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$pale-turquoise-to-bottom:          linear-gradient(180deg, rgba(166, 244, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$fog-to-bottom:                     linear-gradient(180deg, rgba(223, 210, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$columbia-blue-to-bottom:           linear-gradient(180deg, rgba(182, 227, 253, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$alice-blue-to-bottom:              linear-gradient(171deg, rgba(231, 246, 255, 1) 13.37%, rgba(255, 255, 255, 0) 50%);
+$solitude-to-bottom:                linear-gradient(171deg, rgba(225, 237, 255, 1), rgba(227, 242, 255, 1) 13.38%, rgba(255, 255, 255, 0) 50%);
+$solitude-to-bottom-2:              linear-gradient(171deg, rgba(225, 237, 255, 1) 13.37%, rgba(255, 255, 255, 0) 50%);
+$maya-blue-to-right: linear-gradient(to right, #7ac5ff, #5b80ff);
+$neon-blue-to-right: linear-gradient(270deg, #363de8 1.81%, #359ff1 95.02%);
+$deep-sky-blue-166deg: linear-gradient(166.52deg, #17c7ff 10.95%, #66e3ff 27.12%, #a4efff 41.25%, #ffffff 72.25%);
+$electric-blue-to-right: linear-gradient(to right, #7ae7ff, #17c7ff);
+$deep-sky-blue-to-right: linear-gradient(270deg, #00baf5 1.81%, #5ae1ff 95.02%);
+$electric-blue-to-right: linear-gradient(to right, #76e6ff 30%, #54e0ff 80%, #4fdfff 100%);
+$deep-sky-blue-to-right-2: linear-gradient(to right, #4fdfff, #00d1ff);
+$deep-sky-blue-to-left: linear-gradient(to left, #4fdfff 10%, #3edcff 80%, #00d1ff 100%);
+$electric-blue-270deg: linear-gradient(270deg, #17c7ff 0%, #81e8ff 100%);
+$tricolor: radial-gradient(circle at left bottom, #0091f9 13%, #0303b2 100%);
+$classic-rose-to-bottom: linear-gradient(180deg, rgba(252, 204, 232, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$lavender-blue-to-bottom: linear-gradient(180deg, rgba(197, 188, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$pale-slate-to-bottom: linear-gradient(180deg, rgba(197, 194, 192, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$dairy-cream-to-bottom: linear-gradient(180deg, rgba(231, 204, 163, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$quartz-to-bottom: linear-gradient(180deg, rgba(218, 222, 246, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$mint-tulip-2-to-bottom:              linear-gradient(180deg, rgba(195, 245, 221, 1) 0%, rgba(255, 255, 255, 1) 100%);
+$almond-to-bottom: linear-gradient(180deg, rgba(232, 213, 197, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+
+$fz-default: 24px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+
+$ff-manrope: "Manrope", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-600: 0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1130: 1130px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

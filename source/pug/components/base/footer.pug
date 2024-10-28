@@ -1,0 +1,15 @@
+mixin footer(footerMods)
+  footer.footer(class=footerMods)
+    .container
+      .footer__wrapper
+        .footer__logo-wrapper
+          img(src="img/svg/x5-logo.svg", width="56", height="40", alt="Логотип x5.")
+        .footer__content-wrapper
+          p © 2021–2023 <br>ООО «Корпоративный центр ИКС 5»
+          ul(class="footer__links")
+            li(class="footer__links-item")
+              a(class="footer__link", href="#") Политика конфиденциальности
+            li(class="footer__links-item")
+              a(class="footer__link", href="#") Пользовательское соглашение
+            li(class="footer__links-item footer__links-item--order-1")
+              a(class="footer__link footer__link", href="#") Правила акции

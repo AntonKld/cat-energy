@@ -1,0 +1,46 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "form.html",
+        text: "Форма"
+      },
+      {
+        href: "catalog.html",
+        text: "Каталог"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      .header__content(class="header__content--closed")
+        // Логика для логотипа
+        if(currentUrl === "index.html")
+          .header__logo
+            picture
+              source(media="(min-width: 1440px)", srcset="img/svg/logo-desktop.svg", width="202", height="59")
+              source(media="(min-width: 768px)", srcset="img/svg/logo-tablet.svg", width="174", height="52")
+              img(src="img/svg/logo-mobile.svg", width="33", height="38", alt="Логотип-картинка «Кэт энерджи».")
+
+          // Второй логотип только для мобильных
+          img(src="img/svg/logo-mobile2.svg", width="102", height="18", alt="Логотип-картинка «Кэт энерджи».", class="header__logo-mobile")
+
+        else
+          a.header__logo(href="index.html", aria-label="Переход на главную")
+            picture
+              source(media="(min-width: 1440px)", srcset="img/svg/logo-desktop.svg", width="202", height="59")
+              source(media="(min-width: 768px)", srcset="img/svg/logo-tablet.svg", width="174", height="52")
+              img(src="img/svg/logo-mobile.svg", width="33", height="38", alt="Логотип-картинка «Кэт энерджи».")
+
+          // Второй логотип только для мобильных
+          img(src="img/svg/logo-mobile2.svg", width="102", height="18", alt="Логотип-картинка «Кэт энерджи».", class="header__logo-mobile")
+        button(type="button", aria-label="кнопка меню.", class="header__button")
+
+        // Добавление ссылок из headerLinks
+        nav.header__nav
+          each link in headerLinks
+            a.header__link(href=link.href, class=(currentUrl === link.href ? 'header__link--active' : ''))= link.text
